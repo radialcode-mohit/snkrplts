@@ -4,10 +4,11 @@ import { Container } from "react-bootstrap";
 const Description = () => {
   const [first, setfirst] = useState(0);
   const [second, setsecond] = useState(0);
+
   return (
     <section className="py-lg-5 py-3">
       <Container>
-        <div className="d-flex overflow_scroll_max_lg align-items-start">
+        <div className="d-flex overflow_scroll_max_lg align-items-start scroll">
           <div
             onClick={() => {
               setfirst(0);

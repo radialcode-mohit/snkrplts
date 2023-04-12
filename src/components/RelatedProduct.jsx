@@ -297,8 +297,8 @@ const RelatedProduct = () => {
           >
             3
           </p>
-          <p className=" ff_poppins fs_md clr_lightestblack fw_400 border_offwhite ms-3 cursur_poi">
-            Next
+          <p className=" ff_poppins fs_md clr_lightestblack fw_400 border_next_btn padding_next_btn ms-3 cursur_poi">
+            Next &#62;&#62;
           </p>
         </div>
       </Container>

@@ -19,13 +19,19 @@ const Header = () => {
   const [first, setfirst] = useState(1);
 
   useEffect(() => {}, [first]);
-
+  let minus = () => {
+    if (first === 1) {
+      setfirst(1);
+    } else {
+      setfirst(first - 1);
+    }
+  };
   return (
     <header>
       <AdsSection />
       <MyNav />
       <Container>
-        <Row className=" align-items-center py-lg-5">
+        <Row className=" align-items-center py-lg-5 justify-content-between">
           <Col lg={6} className="py-4">
             <Row>
               <Col lg={12}>
@@ -100,7 +106,7 @@ const Header = () => {
             </div>
           </Col>
           <Col lg={6}>
-            <div>
+            <div className="ps-lg-5">
               <p className="ff_poppins fw_600 fs_3xl">
                 PREMIUM MENS SPORTS LATHER KEDS
               </p>
@@ -124,9 +130,7 @@ const Header = () => {
                 <div className="white_space_nowrap border border_radius_21 py-2 px-4 ms-2 ms-sm-4">
                   <span
                     className="ff_Josefin fw_400 fs_lg clr_lightestgrey px-1 cursur_poi"
-                    onClick={() => {
-                      setfirst(first - 1);
-                    }}
+                    onClick={minus}
                   >
                     -
                   </span>
@@ -142,7 +146,7 @@ const Header = () => {
                     +
                   </span>
                 </div>
-                <button className="white_space_nowrap border-0 ff_poppins fw_500 fs_lg clr_white border_radius_21 bg_green py-2 px-4 ms-1 ms-sm-3">
+                <button className="white_space_nowrap border-0 ff_poppins fw_500 fs_lg clr_white border_radius_21 bg_green py-2 px-4 ms-1 ms-sm-3 addtocart_hover">
                   Add to Cart
                 </button>
               </div>
@@ -165,16 +169,16 @@ const Header = () => {
                   Color:{" "}
                 </p>
                 <div className="d-flex align-items-center ms-4">
-                  <div className="maxh_w_35 border_white_1px p-1 border_radius_2px">
+                  <div className="maxh_w_35 border_white_1px p-1 border_radius_2px cursur_poi">
                     <div className="bg_red maxh_w_30"></div>
                   </div>
-                  <div className="maxh_w_35 border_white_1px p-1 border_radius_2px ms-1">
+                  <div className="maxh_w_35 border_white_1px p-1 border_radius_2px ms-1 cursur_poi">
                     <div className="bg_lightbrown maxh_w_30"></div>
                   </div>
-                  <div className="maxh_w_35 border_white_1px p-1 border_radius_2px ms-1">
+                  <div className="maxh_w_35 border_white_1px p-1 border_radius_2px ms-1 cursur_poi">
                     <div className="bg_lightblackblue maxh_w_30"></div>
                   </div>
-                  <div className="maxh_w_35 border_white_1px p-1 border_radius_2px ms-1">
+                  <div className="maxh_w_35 border_white_1px p-1 border_radius_2px ms-1 cursur_poi">
                     <div className="bg_grey maxh_w_30"></div>
                   </div>
                 </div>
@@ -185,7 +189,7 @@ const Header = () => {
                   <a href="#">
                     <img src={compare} alt="compare" />
                   </a>
-                  <p className="mb-0 ff_poppins fw_300 fs_sm clr_222222 ms-1">
+                  <p className="mb-0 ff_poppins fw_300 fs_sm clr_222222 ms-1 cursur_poi">
                     Compare
                   </p>
                 </div>
@@ -193,25 +197,25 @@ const Header = () => {
                   <a href="#">
                     <img src={heart} alt="heart" />
                   </a>
-                  <p className="mb-0 ff_poppins fw_300 fs_sm clr_222222 ms-1">
+                  <p className="mb-0 ff_poppins fw_300 fs_sm clr_222222 ms-1 cursur_poi">
                     Wishlist
                   </p>
                 </div>
               </div>
               <div className="d-flex align-items-center border_top_1px_clr808080 pt-4 mt-5">
-                <a href="#">
+                <a href="#" className="transform_translate_img transition">
                   <img src={share} alt="share" />
                 </a>
-                <a href="#" className="ms-4">
+                <a href="#" className="ms-4 transform_translate_img transition">
                   <img src={facebook} alt="facebook" />
                 </a>
-                <a href="#" className="ms-4">
+                <a href="#" className="ms-4 transform_translate_img transition">
                   <img src={tweeter} alt="tweeter" />
                 </a>
-                <a href="#" className="ms-4">
+                <a href="#" className="ms-4 transform_translate_img transition">
                   <img src={pintrest} alt="pintrest" />
                 </a>
-                <a href="#" className="ms-4">
+                <a href="#" className="ms-4 transform_translate_img transition">
                   <img src={google} alt="google" />
                 </a>
               </div>

@@ -15,6 +15,7 @@
   --fs-md: 18px;
   --fs-sm: 16px;
   --fs-xsm: 14px;
+  --fs-10: 10px;
   /* color  */
   --clr-black: #000000;
   --clr-222222: #222222;
@@ -88,6 +89,9 @@
 }
 .clr_blue {
   color: var(--clr-blue);
+}
+.fs_10 {
+  font-size: var(--fs-10);
 }
 .fs_xsm {
   font-size: var(--fs-xsm);
@@ -224,8 +228,8 @@ select:first-child {
   padding-left: 32px;
   padding-right: 32px;
 }
-.box_shadow_footlocker:hover {
-  box-shadow: 23px 44px 47px rgba(0, 0, 0, 0.2);
+.box_shadow_footlocker {
+  box-shadow: 23px 44px 47px rgba(0, 0, 0, 0.1);
 }
 .transition {
   transition: all 0.1s linear;
@@ -235,6 +239,9 @@ select:first-child {
 }
 .ms_11 {
   margin-left: 11px;
+}
+.z-index1 {
+  z-index: 1;
 }
 /* .red_underline_active1:visited {
   color: var(--clr-lightred) !important;
@@ -282,6 +289,7 @@ select:first-child {
 .red_underline_active3:focus::before {
   width: 100%;
 }
+
 .star_font_styles {
   font-size: 40px;
   color: yellow;
@@ -290,7 +298,7 @@ select:first-child {
   white-space: nowrap;
 }
 .border_btm_red {
-  border-bottom: 5px solid #ff0000;
+  border-bottom: 3px solid #ff0000;
 }
 .green_btns_hover {
   border: 1px solid #28a745 !important;
@@ -342,6 +350,22 @@ select:first-child {
 }
 .hover_social_icons:hover {
   transform: translateY(-2px);
+}
+.addtocart_hover:hover {
+  background-color: #2a793c;
+}
+.transform_translate_img:hover {
+  transform: translateY(-5px) !important;
+}
+.border_next_btn {
+  border: 1px solid #9c9c9c;
+  border-radius: 9px;
+}
+.padding_next_btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 @media (min-width: 576px) {
   :root {

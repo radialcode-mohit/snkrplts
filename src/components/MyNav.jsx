@@ -34,7 +34,12 @@ const MyNav = () => {
                 : "d-flex flex-column flex-lg-row justify-content-center align-items-center justify-content-lg-end py-4  mb-0 ps-0 ul_mobile_view left_0"
             }
           >
-            <li className="ms-lg-3 mt-5 mt-lg-0">
+            <li
+              className="ms-lg-3 mt-5 mt-lg-0"
+              onClick={() => {
+                setfirst(true);
+              }}
+            >
               <a
                 href="#"
                 className="ff_roboto fw_400 fs_md clr_black hover_icrease_font_w"
@@ -42,7 +47,12 @@ const MyNav = () => {
                 HOME
               </a>
             </li>
-            <li className="ms-lg-3 mt-5 mt-lg-0">
+            <li
+              className="ms-lg-3 mt-5 mt-lg-0"
+              onClick={() => {
+                setfirst(true);
+              }}
+            >
               <a
                 href="#"
                 className="ff_roboto fw_400 fs_md clr_black hover_icrease_font_w"
@@ -50,7 +60,12 @@ const MyNav = () => {
                 SNEAKERS KOPEN
               </a>
             </li>
-            <li className="ms-lg-3 mt-5 mt-lg-0">
+            <li
+              className="ms-lg-3 mt-5 mt-lg-0"
+              onClick={() => {
+                setfirst(true);
+              }}
+            >
               <a
                 href="#"
                 className="ff_roboto fw_400 fs_md clr_black hover_icrease_font_w"
@@ -58,7 +73,12 @@ const MyNav = () => {
                 INTERVIEWS
               </a>
             </li>
-            <li className="ms-lg-3 mt-5 mt-lg-0">
+            <li
+              className="ms-lg-3 mt-5 mt-lg-0"
+              onClick={() => {
+                setfirst(true);
+              }}
+            >
               <a
                 href="#"
                 className="ff_roboto fw_400 fs_md clr_black hover_icrease_font_w"
@@ -66,7 +86,12 @@ const MyNav = () => {
                 SALE
               </a>
             </li>
-            <li className="ms-lg-3 mt-5 mt-lg-0">
+            <li
+              className="ms-lg-3 mt-5 mt-lg-0"
+              onClick={() => {
+                setfirst(true);
+              }}
+            >
               <a
                 href="#"
                 className="ff_roboto fw_400 fs_md clr_black hover_icrease_font_w"
@@ -74,7 +99,12 @@ const MyNav = () => {
                 SNEAKER VAN DE DAG
               </a>
             </li>
-            <li className="ms-lg-3 mt-5 mt-lg-0">
+            <li
+              className="ms-lg-3 mt-5 mt-lg-0"
+              onClick={() => {
+                setfirst(true);
+              }}
+            >
               <a
                 href="#"
                 className="ff_roboto fw_400 fs_md clr_black hover_icrease_font_w"
@@ -82,7 +112,12 @@ const MyNav = () => {
                 SNEAKER FORUM
               </a>
             </li>
-            <li className="ms-lg-3 mt-5 mt-lg-0">
+            <li
+              className="ms-lg-3 mt-5 mt-lg-0"
+              onClick={() => {
+                setfirst(true);
+              }}
+            >
               <a
                 href="#"
                 className="ff_roboto fw_400 fs_md clr_black hover_icrease_font_w"
